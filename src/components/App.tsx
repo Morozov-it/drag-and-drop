@@ -8,8 +8,8 @@ const App: React.FC = () => {
   return (
     <div className="app">
       <h1 className='title'>Drag&Drop</h1>
-      {/* <Plain />
-      <Complex /> */}
+      <Plain />
+      <Complex />
       <ReactDnD />
     </div>
   )
