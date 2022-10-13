@@ -28,6 +28,7 @@ const Task: React.FC<Props> = ({ task, index }) => {
                     {...provided.draggableProps}
                     {...provided.dragHandleProps} //handle
                     className={classses(snapshot.isDragging)}
+                    aria-roledescription='Press space bar to lift the task' //for screen reader
                 >
                     {/* <div className='handle' {...provided.dragHandleProps}/> */}
                     {task.content}
@@ -37,4 +38,4 @@ const Task: React.FC<Props> = ({ task, index }) => {
     )
 }
 
-export default Task
+export default React.memo(Task)

@@ -51,4 +51,4 @@ const Column: React.FC<Props> = ({ column, index, tasks }) => {
     )
 }
 
-export default Column
+export default React.memo(Column)
